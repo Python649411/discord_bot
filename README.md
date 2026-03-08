@@ -4,3 +4,4 @@
 ## 아직 일부 기능만 추가했습니다 더 추가할 예정입니다
 `TypeScript로 짜여있습니다`
 `powered by discord.js`
+~~ah node_modules은 못 올립니다 알아서 하십쇼~~

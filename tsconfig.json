@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",         // 최신 문법 쓰겠다! (#private 에러 해결)
-    "module": "NodeNext",       // 노드 최신 방식으로 돌리겠다! (import.meta 에러 해결)
+    "target": "ESNext",         
+    "module": "NodeNext",       
     "moduleResolution": "NodeNext",
-    "esModuleInterop": true,    // 자바스크립트랑 사이좋게 지내겠다!
-    "skipLibCheck": true,       // 남이 만든 라이브러리(discord.js) 검사는 대충 넘어가자!
-    "strict": true              // 하지만 내 코드는 엄격하게 감시해줘!
+    "esModuleInterop": true,    
+    "skipLibCheck": true,       
+    "strict": true              !
   }
+
 }

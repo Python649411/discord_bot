@@ -6,3 +6,6 @@
 `powered by discord.js`
 *맨 마지막줄에 있는 client.login('');는 알아서 토큰 적으쇼*
 ~~ah node_modules은 못 올립니다 알아서 하십쇼~~
+
+
+# 나머지 기능은 포크해서 사용하십시오

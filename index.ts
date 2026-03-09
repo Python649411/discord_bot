@@ -48,7 +48,7 @@ client.on('messageCreate', async (msg) => {
         sever_check(msg)
     }
     const name = ''
-    if (msg.content === `!닉네임 ${kimsemin__}`) {
+    if (msg.content === `!닉네임 ${}`) {
         await msg.reply(
             `당신의 마크 정보
              운영자 여부 : true

@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: built-js-files
-        path: dist/ # 사장님의 JS 파일이 모이는 폴더 이름!
+        path: dist/

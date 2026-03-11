@@ -1,0 +1,30 @@
+name: TS 빌드 자동화
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Node.js v22 고정
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.x'
+        cache: 'npm'
+
+    - name: 📦 의존성 설치
+      run: npm ci
+
+    - name: 🏗️ TS -> JS 빌드 (tsc)
+      run: npm run build --if-present
+
+    - name: 📦 빌드된 파일 저장 (dist 폴더)
+      uses: actions/upload-artifact@v4
+      with:
+        name: built-js-files
+        path: dist/ # 사장님의 JS 파일이 모이는 폴더 이름!

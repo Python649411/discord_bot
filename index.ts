@@ -47,6 +47,9 @@ client.on('messageCreate', async (msg) => {
     if (msg.content === '!서버상태') {
         sever_check(msg)
     }
+    if (msg.content === '!장소좌표') {
+        msg.replay("해당 장소의 좌표는 x:* y:* z:* 입니다")
+    }
     const name = ''
     if (msg.content === `!닉네임 ${}`) {
         await msg.reply(

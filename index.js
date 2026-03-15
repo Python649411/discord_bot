@@ -3,13 +3,13 @@ import { createRequire } from 'module';
 import { exec } from 'child_process';
 import axios from 'axios';
 const require = createRequire(import.meta.url);
-const ping = require('ping') as any; // 'any'라고 붙여서 TS의 잔소리를 차단합니다.
+const ping = require('ping');
 
 
 
 let wasOnline = true;
 
-async function sever_check(msg: Message) {
+async function sever_check(msg) {
     try {
         // 1. 데이터 가져오기
         const res = await axios.get('https://api.mcstatus.io/v2/status/java/서버주소');
@@ -59,8 +59,6 @@ client.on('messageCreate', async (msg) => {
              밴 횟수 : 0`
         )
     }
-
-
 });
 
 

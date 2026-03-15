@@ -51,7 +51,7 @@ client.on('messageCreate', async (msg) => {
         msg.replay("해당 장소의 좌표는 x:* y:* z:* 입니다")
     }
     const name = ''
-    if (msg.content === `!닉네임 ${}`) {
+    if (msg.content === `!닉네임 ${name}`) {
         await msg.reply(
             `당신의 마크 정보
              운영자 여부 : true
